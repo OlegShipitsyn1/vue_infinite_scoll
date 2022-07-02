@@ -40,8 +40,6 @@
 .wrapper {
   height: 80vh;
   overflow: auto;
-  flex-shrink: 0;
-  flex-grow: 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.136);
   background-color: #fff;
 }
