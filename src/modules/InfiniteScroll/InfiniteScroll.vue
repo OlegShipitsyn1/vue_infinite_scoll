@@ -24,7 +24,7 @@ const props = defineProps({
   }
 })
 
- const emit = defineEmits(['input'])
+const emit = defineEmits(['update:modelValue'])
 
 const data = reactive({
   isLoading: false,
