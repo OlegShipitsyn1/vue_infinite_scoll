@@ -38,7 +38,6 @@ const onIntersection = async () => {
   data.isLoading = true
   const response = await props.fetch(data.nextPage)
   data.nextPage = props.extractNextPage(response, data.nextPage)
-  console.log(props.extractNewItems(response));
   emit('update:modelValue', [ ...props.modelValue, ...props.extractNewItems(response) ])
   data.isLoading = false
 }
